@@ -75,8 +75,14 @@ header {
   padding-top: 5px;
   padding-bottom: 5px;
   color: #ffffff;
+  text-decoration: none;
   background: rgba(0, 0, 0, 0.15);
   border: 2px solid white;
+  transition: 1s;
+}
+.about button:hover {
+  background-color: #fff;
+  color: black;
 }
 
 .persons {
