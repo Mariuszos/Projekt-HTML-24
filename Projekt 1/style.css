@@ -1,0 +1,241 @@
+.container {
+  margin: 0 auto;
+  font-family: Roboto, sans-serif;
+  width: 960px;
+  box-sizing: border-box;
+}
+
+header {
+  height: 7vh;
+  background: #4e4e4e;
+  display: flex;
+  color: #ffffff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.nav {
+  display: flex;
+  width: 80%;
+  justify-content: flex-end;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  /*    justify-content: center;*/
+  justify-content: space-around;
+  width: 40%;
+}
+
+.about {
+  background: url(https://langero.com/wp-content/uploads/2019/08/forest-547363_1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 93vh;
+  color: #ffffff;
+  padding-left: 80px;
+}
+
+.about h1 {
+  width: 35vw;
+  padding-top: 150px;
+  padding-bottom: 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.about h2 {
+  width: 276px;
+  height: 23.13px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+}
+
+.about button {
+  margin-top: 30px;
+  width: 150px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.15);
+  border: 2px solid white;
+}
+
+.persons {
+  height: 100vh;
+  background: #f1f1f1;
+  color: #000000;
+}
+
+.persons h1 {
+  height: 20vh;
+  width: 386px;
+  margin-left: 80px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  color: #152d41;
+}
+
+.person {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.person-image {
+  margin-left: 30px;
+  margin-right: 10px;
+  width: 130px;
+  height: 130px;
+  background: #c4c4c4;
+  border-radius: 50%;
+}
+
+.person-about {
+  width: 50vw;
+}
+
+.person-about h2 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.person:nth-of-type(even) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.person:nth-of-type(even) .person-image {
+  background: #917d7d;
+}
+
+.person:nth-of-type(even) h2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.person:nth-of-type(even) p {
+  text-align: right;
+}
+
+/*OFFERS*/
+
+.offers {
+  height: 100vh;
+  background: #405d78;
+  position: relative;
+}
+
+.offers-title {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+.offers-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.offer-item {
+  display: flex;
+  width: 180px;
+  height: 180px;
+  background: #f1f1f1;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.offer-title {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.new {
+  display: flex;
+  position: relative;
+}
+
+.dot {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: #e07a64;
+  border-radius: 50%;
+  margin: -10px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  width: 960px;
+  bottom: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  background: #4e4e4e;
+  height: 12vh;
+}
+
+.footer-title {
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  padding-right: 150px;
+  width: 5%;
+}
+
+.insta {
+  /*    display: flex;*/
+  font-size: 40px;
+  background-color: #fff;
+  /*    background-color: #4E4E4E;*/
+}
+
+.facebook {
+  font-size: 40px;
+  background-color: #4e4e4e;
+}
