@@ -203,6 +203,7 @@ header {
 footer {
   display: flex;
   justify-content: space-between;
+  /* flex-direction: row; */
   width: 100%;
   position: absolute;
   width: 960px;
@@ -223,19 +224,17 @@ footer {
 
 .socials {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   padding-right: 150px;
-  width: 5%;
+  width: 10%;
+  background-color: #4e4e4e;
 }
 
 .insta {
-  /*    display: flex;*/
   font-size: 40px;
-  background-color: #fff;
-  /*    background-color: #4E4E4E;*/
 }
 
 .facebook {
   font-size: 40px;
-  background-color: #4e4e4e;
 }
