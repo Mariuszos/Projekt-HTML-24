@@ -34,9 +34,11 @@
         <div class="logo">moja firma</div>
         <nav class="nav">
           <ul class="nav-links">
-            <li class="nav-link">o nas</li>
-            <li class="nav-link">oferta</li>
-            <li class="nav-link">kontakt</li>
+            <li class="nav-link"><a href="#section-about">o nas</a></li>
+            <li class="nav-link"><a href="#section-offers">oferta</a></li>
+            <li class="nav-link">
+              <a href="#" style="cursor: not-allowed">kontakt</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -44,14 +46,16 @@
       <!-- Main   -->
 
       <main class="about">
-        <h1>Nasza firma oferuje najwyższej jakości produkty.</h1>
-        <h2>Nie wierz nam na słowo - sprawdź</h2>
-        <button><a href="offers.html" target="_self">oferta</a></button>
+        <div class="background">
+          <h1>Nasza firma oferuje najwyższej jakości produkty.</h1>
+          <h2>Nie wierz nam na słowo - sprawdź</h2>
+          <button><a href="#section-offers">oferta</a></button>
+        </div>
       </main>
 
       <!--    Specjaliści-->
 
-      <section class="persons">
+      <section class="persons" id="section-about">
         <h1>Nasi specjaliści</h1>
         <div class="person">
           <div class="person-image"></div>
@@ -81,7 +85,7 @@
 
       <!-- Oferta + footer -->
 
-      <section class="offers">
+      <section class="offers" id="section-offers">
         <h1 class="offers-title">Czym zajmuje się nasza firma?</h1>
         <div class="offers-items">
           <div class="offer-item new">
