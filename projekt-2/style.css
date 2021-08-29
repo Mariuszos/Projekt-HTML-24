@@ -5,7 +5,7 @@
 }
 
 header {
-  padding-left: 5px;
+  padding-left: 8px;
   height: 7vh;
   background: #4e4e4e;
   display: flex;
@@ -38,7 +38,7 @@ header {
 }
 .background {
   height: 93vh;
-  padding-left: 5px;
+  padding-left: 8px;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -151,31 +151,33 @@ header {
   text-align: right;
 } */
 
-/*OFFERS*/
+/*==========OFFERS==========*/
 
 .offers {
-  height: 100vh;
   background: #405d78;
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
 }
 
 .offers-title {
-  height: 15vh;
-  display: flex;
-  align-items: center;
-  padding-left: 80px;
+  padding-left: 8px;
+  padding-right: 8px;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 20px;
   line-height: 42px;
   color: #ffffff;
+  text-align: center;
 }
 
 .offers-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* padding-left: 8px;
+  padding-right: 8px; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
   margin: 0 auto;
-  width: 80%;
+  /* width: 80%; */
   flex-wrap: wrap;
 }
 
@@ -188,12 +190,12 @@ header {
   margin-top: 20px;
   margin-bottom: 10px;
   margin-right: 20px;
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
 
-.offer-item:hover {
+/* .offer-item:hover {
   transform: scale(1.05);
-}
+} */
 
 .offer-title {
   display: flex;
@@ -216,40 +218,43 @@ header {
 }
 
 footer {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  /* justify-content: space-between; */
   /* flex-direction: row; */
-  width: 100%;
-  position: absolute;
-  width: 960px;
-  bottom: 0;
+  /* position: absolute; */
+  /* padding-left: 0; */
+  /* bottom: 0; */
+  margin-top: 15px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 21px;
   color: #ffffff;
   background: #4e4e4e;
-  height: 12vh;
+  /* height: 12vh; */
 }
 
 .footer-title {
-  display: flex;
-  align-items: center;
-  padding-left: 80px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  text-align: center;
+  /* display: flex; */
+  /* align-items: center; */
 }
 
 .socials {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding-right: 150px;
-  width: 10%;
   background-color: #4e4e4e;
+  padding-bottom: 20px;
 }
 
 .insta {
   font-size: 40px;
+  margin-right: 10px;
 }
 
 .facebook {
   font-size: 40px;
+  margin-left: 10px;
 }
