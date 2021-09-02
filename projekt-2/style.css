@@ -93,7 +93,7 @@ header {
 }
 
 .persons h1 {
-  margin-top: 20px;
+  padding-top: 20px;
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 28px;
@@ -161,8 +161,10 @@ header {
 }
 
 .offers-title {
-  padding-left: 8px;
+  padding-top: 15px;
   padding-right: 8px;
+  padding-bottom: 15px;
+  padding-left: 8px;
   font-weight: bold;
   font-size: 20px;
   line-height: 42px;
@@ -257,4 +259,208 @@ footer {
 .facebook {
   font-size: 40px;
   margin-left: 10px;
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) and (orientation: portrait) {
+  .logo,
+  .background {
+    padding-left: 20px;
+  }
+
+  .about h1 {
+    width: 50vw;
+    padding-top: 180px;
+    font-size: 28px;
+  }
+  .about h2 {
+    font-size: 20px;
+  }
+
+  .about button a {
+    line-height: 30px;
+    font-size: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .person-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .offers-title {
+    padding-top: 30px;
+    font-size: 24px;
+  }
+
+  .offer-item {
+    width: 210px;
+    height: 210px;
+  }
+
+  .offer-title {
+    font-size: 20px;
+  }
+
+  .footer-title {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .insta {
+    font-size: 50px;
+  }
+
+  .facebook {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
+  .logo,
+  .background {
+    padding-left: 20px;
+  }
+
+  .about {
+    height: 90vh;
+  }
+  header {
+    height: 10vh;
+  }
+  .about h1 {
+    width: 70vw;
+    padding-top: 50px;
+    font-size: 20px;
+  }
+  .about h2 {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .about button {
+    width: 110px;
+  }
+  .about button a {
+    line-height: 20px;
+    font-size: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .offer-item {
+    width: 210px;
+    height: 210px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo,
+  .background {
+    padding-left: 40px;
+  }
+  .logo {
+    font-size: 22px;
+  }
+  .about h1 {
+    width: 60vw;
+    padding-top: 180px;
+    font-size: 36px;
+  }
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .about button a {
+    line-height: 30px;
+    font-size: 24px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .person-about {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .persons h1 {
+    padding-top: 30px;
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .person-image {
+    width: 180px;
+    height: 180px;
+  }
+  .person-about h2 {
+    font-size: 24px;
+  }
+  .person-about p {
+    font-size: 20px;
+  }
+
+  .offers-title {
+    font-size: 32px;
+  }
+
+  .offer-item {
+    width: 240px;
+    height: 240px;
+  }
+
+  .offer-title {
+    font-size: 24px;
+  }
+
+  .footer-title {
+    font-size: 26px;
+  }
+
+  .insta {
+    font-size: 55px;
+  }
+
+  .facebook {
+    font-size: 55px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    height: 7vh;
+    background: #4e4e4e;
+    display: flex;
+    color: #ffffff;
+  }
+
+  .logo {
+    display: flex;
+    padding-left: 40px;
+
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .nav {
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+  }
+  .offers-title {
+    font-size: 36px;
+    padding-top: 25px;
+  }
+  .offer-item {
+    width: 280px;
+    height: 280px;
+  }
+  .socials {
+    padding-top: 10px;
+  }
 }
