@@ -25,8 +25,6 @@ header {
 
 .nav {
   display: none;
-  width: 80%;
-  justify-content: flex-end;
 }
 
 .about {
@@ -118,10 +116,6 @@ header {
   margin-bottom: 30px;
 }
 
-.person-about {
-  /* width: 50vw; */
-}
-
 .person-about h2 {
   font-weight: bold;
   font-size: 20px;
@@ -133,29 +127,14 @@ header {
   text-align: justify;
 }
 
-/* .person:nth-of-type(even) {
-  display: flex;
-  flex-direction: row-reverse;
-} */
-
 .person:nth-of-type(even) .person-image {
   background-image: url(../projekt-1/images/woman-3640935_1280.jpg);
 }
-
-/* .person:nth-of-type(even) h2 {
-  display: flex;
-  justify-content: flex-end;
-} */
-
-/* .person:nth-of-type(even) p {
-  text-align: right;
-} */
 
 /*==========OFFERS==========*/
 
 .offers {
   background: #405d78;
-  /* position: relative; */
   display: flex;
   flex-direction: column;
 }
@@ -173,13 +152,7 @@ header {
 }
 
 .offers-items {
-  /* padding-left: 8px;
-  padding-right: 8px; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
   margin: 0 auto;
-  /* width: 80%; */
   flex-wrap: wrap;
 }
 
@@ -192,12 +165,7 @@ header {
   margin-top: 20px;
   margin-bottom: 10px;
   margin-right: 20px;
-  /* transition: 0.5s; */
 }
-
-/* .offer-item:hover {
-  transform: scale(1.05);
-} */
 
 .offer-title {
   display: flex;
@@ -220,27 +188,18 @@ header {
 }
 
 footer {
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* flex-direction: row; */
-  /* position: absolute; */
-  /* padding-left: 0; */
-  /* bottom: 0; */
   margin-top: 15px;
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
   background: #4e4e4e;
-  /* height: 12vh; */
 }
 
 .footer-title {
   padding-top: 20px;
   padding-bottom: 5px;
   text-align: center;
-  /* display: flex; */
-  /* align-items: center; */
 }
 
 .socials {
@@ -261,7 +220,7 @@ footer {
   margin-left: 10px;
 }
 
-@media screen and (min-width: 576px) and (max-width: 767px) and (orientation: portrait) {
+@media screen and (max-width: 768px) {
   .logo,
   .background {
     padding-left: 20px;
@@ -316,10 +275,14 @@ footer {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
+@media screen and (min-width: 769px) {
   .logo,
   .background {
     padding-left: 20px;
+  }
+
+  .logo {
+    font-size: 25px;
   }
 
   .about {
@@ -329,54 +292,23 @@ footer {
     height: 10vh;
   }
   .about h1 {
-    width: 70vw;
-    padding-top: 50px;
-    font-size: 20px;
+    width: 60vw;
+    padding-top: 180px;
+    font-size: 32px;
   }
   .about h2 {
-    font-size: 14px;
+    font-size: 22px;
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .about button {
-    width: 110px;
-  }
+
   .about button a {
     line-height: 20px;
-    font-size: 16px;
-    padding-right: 20px;
-    padding-left: 20px;
+    font-size: 18px;
+    padding-right: 18px;
+    padding-left: 18px;
   }
 
-  .offer-item {
-    width: 210px;
-    height: 210px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .logo,
-  .background {
-    padding-left: 40px;
-  }
-  .logo {
-    font-size: 22px;
-  }
-  .about h1 {
-    width: 60vw;
-    padding-top: 180px;
-    font-size: 36px;
-  }
-  .about h2 {
-    font-size: 28px;
-  }
-
-  .about button a {
-    line-height: 30px;
-    font-size: 24px;
-    padding-right: 40px;
-    padding-left: 40px;
-  }
   .person-about {
     padding-right: 20px;
     padding-left: 20px;
@@ -402,13 +334,43 @@ footer {
     font-size: 32px;
   }
 
+  .offers-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+  }
+
   .offer-item {
-    width: 240px;
-    height: 240px;
+    display: flex;
+    width: 210px;
+    height: 210px;
+    background: #f1f1f1;
+    transition: 0.5s;
+  }
+
+  .offer-item:hover {
+    transform: scale(1.05);
   }
 
   .offer-title {
-    font-size: 24px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .new {
+    display: flex;
+    position: relative;
+  }
+
+  .dot {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: #e07a64;
+    border-radius: 50%;
+    margin: -10px;
   }
 
   .footer-title {
@@ -424,20 +386,9 @@ footer {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  header {
-    height: 7vh;
-    background: #4e4e4e;
-    display: flex;
-    color: #ffffff;
-  }
-
+@media screen and (min-width: 1024px) {
   .logo {
-    display: flex;
-    padding-left: 40px;
-
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 28px;
   }
 
   .nav {
@@ -452,15 +403,75 @@ footer {
     justify-content: space-around;
     width: 40%;
   }
+
+  .about h1 {
+    font-size: 36px;
+  }
+  .about h2 {
+    font-size: 24px;
+  }
+
+  .about button a {
+    font-size: 20px;
+  }
+
+  .person-about {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .persons h1 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .person-image {
+    width: 200px;
+    height: 200px;
+  }
+  .person-about h2 {
+    font-size: 28px;
+  }
+  .person-about p {
+    font-size: 24px;
+  }
+
   .offers-title {
     font-size: 36px;
     padding-top: 25px;
   }
-  .offer-item {
-    width: 280px;
-    height: 280px;
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+    background: #4e4e4e;
+    height: 12vh;
   }
+
+  .footer-title {
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+  }
+
   .socials {
-    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 150px;
+    padding-top: 30px;
+    width: 10%;
+    background-color: #4e4e4e;
+  }
+  .insta {
+    font-size: 40px;
+  }
+
+  .facebook {
+    font-size: 40px;
   }
 }
