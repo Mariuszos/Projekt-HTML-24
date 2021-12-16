@@ -302,11 +302,24 @@ footer {
     padding-bottom: 10px;
   }
 
+  .about button {
+    transition: 1s;
+  }
+
   .about button a {
     line-height: 20px;
     font-size: 18px;
     padding-right: 18px;
     padding-left: 18px;
+  }
+
+  .about button:hover {
+    background-color: #fff;
+  }
+
+  .about button a:hover {
+    color: black;
+    font-weight: bold;
   }
 
   .person-about {
@@ -404,6 +417,11 @@ footer {
     width: 40%;
   }
 
+  .nav-link a {
+    color: white;
+    text-decoration: none;
+  }
+
   .about h1 {
     font-size: 36px;
   }
@@ -415,7 +433,7 @@ footer {
     font-size: 20px;
   }
 
-  .person-about {
+  /* .person-about {
     padding-right: 30px;
     padding-left: 30px;
   }
@@ -432,7 +450,77 @@ footer {
   }
   .person-about p {
     font-size: 24px;
+  } */
+
+  /* ------------------------------------------------------------------------- */
+  .persons {
+    height: 100vh;
+    background: #f1f1f1;
+    color: #000000;
   }
+
+  .persons h1 {
+    height: 20vh;
+    width: 386px;
+    margin-left: 80px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    color: #152d41;
+  }
+
+  .person {
+    display: flex;
+    flex-direction: row;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+
+  .person-image {
+    background-image: url(../projekt-1/images/man-6115452_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 180px;
+    min-height: 180px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+  }
+
+  .person-about {
+    width: 70vw;
+  }
+
+  .person-about h2 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  .person:nth-of-type(even) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .person:nth-of-type(even) .person-image {
+    background-image: url(../projekt-1/images/woman-3640935_1280.jpg);
+  }
+
+  .person:nth-of-type(even) h2 {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .person:nth-of-type(even) p {
+    text-align: right;
+  }
+
+  /* ------------------------------------------------------------------------- */
 
   .offers-title {
     font-size: 36px;
